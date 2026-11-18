@@ -1,0 +1,5 @@
+Link na bio - Exclusive Primme Barbearia
+Abra index.html no navegador.
+Cores: variáveis no topo de css/style.css (--acc é o laranja).
+WhatsApp: 5581982564859 (trocar em index.html se mudar).
+Imagens: assets/img/

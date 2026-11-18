@@ -1,0 +1,43 @@
+:root{--bg:#0d0d0f;--panel:#17171a;--line:#2b2b30;--text:#f4f1ec;--mut:#a9a39a;--acc:#f08a24;--accd:#c96a10;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--bg)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Barlow',system-ui,sans-serif;font-size:16px;line-height:1.4;display:flex;justify-content:center;min-height:100vh}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:480px;padding:28px 20px 40px}
+.top{text-align:center}
+.av{width:112px;height:112px;margin:0 auto;border-radius:50%;padding:4px;background:conic-gradient(from 200deg,#f08a24,#e2336b,#8a3ab9,#f08a24)}
+.av img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid var(--bg);display:block}
+h1{font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:800;font-size:clamp(44px,13vw,60px);line-height:.92;letter-spacing:-.01em;text-transform:uppercase;margin:22px 0 10px}
+.handle{color:var(--mut);font-size:15px;margin:0}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:500;background:var(--panel)}
+.dot{width:8px;height:8px;border-radius:50%;background:#7a7a80}
+.status.on .dot{background:#3ddc84;box-shadow:0 0 0 4px rgba(61,220,132,.18)}
+.cta{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:26px;height:60px;border-radius:14px;background:var(--acc);color:#1a0e03;font-weight:600;font-size:18px;transition:background .15s,transform .15s}
+.cta:hover{background:#ff9a35}.cta:active{transform:scale(.98)}
+.cta svg{width:26px;height:26px}
+.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px}
+.row a{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);font-size:14px;font-weight:500;transition:border-color .15s}
+.row a:hover{border-color:var(--acc)}
+.row svg{width:24px;height:24px;color:var(--acc)}
+h2{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;line-height:1;margin:44px 0 6px}
+.lead{color:var(--mut);margin:0 0 16px;font-size:15px}
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.svc li{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.svc li>div{flex:1;min-width:0}
+.th{width:84px;height:84px;object-fit:cover;border-radius:12px;flex:none;display:block}
+.svc b{font-weight:600;font-size:18px;display:block}
+.svc span{color:var(--mut);font-size:14px}
+.svc a{color:var(--acc);font-weight:600;font-size:14px;white-space:nowrap}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:14px}
+.gal img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;display:block}
+.gal img:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.more{display:block;text-align:center;margin-top:14px;padding:16px 14px;border-radius:14px;background:var(--acc);color:#1a0e03;font-weight:600;font-size:18px;transition:background .15s,transform .15s}
+.more:hover{background:#ff9a35}.more:active{transform:scale(.98)}
+.loc{margin-top:14px;padding:20px;border-radius:16px;background:var(--panel);border:1px solid var(--line)}
+.loc p{margin:0 0 14px}
+.loc small{display:block;color:var(--mut);font-size:13px;margin-bottom:2px}
+.loc a.map{display:inline-block;color:var(--acc);font-weight:600}
+.foot{margin-top:40px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:800;font-size:24px;text-transform:uppercase}
+.foot span{display:block;font-family:'Barlow',sans-serif;font-style:normal;font-weight:400;font-size:13px;color:var(--mut);text-transform:none;margin-top:4px}
+a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
